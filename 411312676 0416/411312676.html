@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宋媫 | 個人求職履歷</title>
+    <style>
+        :root {
+            /* 引用自雅緻色卡參數 */
+            --warm-fog: #DDD3C9;         /* Warm Fog: 極淺灰褐 */
+            --berry-good: #ECC4C3;       /* Berry Good: 淺霧粉 */
+            --usu-koubai: #B97D7B;       /* Usu Koubai Blossom: 深霧粉 */
+            --meadow-mauve: #928E5E;     /* Meadow Mauve: 板岩灰綠 */
+            --soldier-green: #575527;    /* Soldier Green: 深草綠 */
+            
+            --card-bg: rgba(255, 255, 255, 0.6); /* 半透明感卡片 */
+        }
+
+        body {
+            font-family: 'Segoe UI', "Microsoft JhengHei", sans-serif;
+            background-color: var(--warm-fog);
+            color: var(--soldier-green);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* 導覽列 */
+        nav {
+            position: fixed;
+            top: 0; width: 100%;
+            background: rgba(146, 142, 94, 0.9); /* Meadow Mauve */
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fcfaf2; 
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: var(--berry-good); }
+
+        section {
+            padding: 120px 10% 80px;
+            min-height: 70vh;
+        }
+
+        .container { max-width: 1000px; margin: auto; }
+
+        /* 名字標題 */
+        .name-title {
+            font-size: 3.5rem;
+            margin: 0;
+            color: var(--soldier-green: #575527;  /* Soldier Green: 深草綠 */);
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--soldier-green);
+            border-bottom: 3px solid var(--usu-koubai);
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        /* 布局樣式 */
+        .profile-flex {
+            display: flex;
+            align-items: flex-start;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .profile-img {
+            width: 250px;
+            height: 320px;
+            border-radius: 40px 15px;
+            box-shadow: 15px 15px 35px rgba(87, 85, 39, 0.15);
+            border: 6px solid var(--berry-good);
+            object-fit: cover;
+        }
+
+        .info-box {
+            background: var(--berry-good);
+            padding: 25px;
+            border-radius: 20px;
+            margin-top: 25px;
+            color: var(--soldier-green);
+            border: 1px dashed var(--usu-koubai);
+        }
+
+        /* 卡片設計 */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 25px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(146, 142, 94, 0.3); /* Meadow Mauve 邊框 */
+            transition: 0.3s ease;
+        }
+
+        .card:hover { 
+            transform: translateY(-8px);
+            background: #ffffff;
+        }
+
+        .timeline-item {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            border-left: 3px solid var(--meadow-mauve);
+        }
+
+        /* 區塊顏色交錯 (取消大面積白色) */
+        #analysis { 
+            background-color: #ced4cd; /* 稍微深一點的綠調灰，模擬草地晨霧 */
+        }
+
+        #vision { 
+            background-color: #d8c8c6; /* 稍微偏粉的暖灰色，呼應 Berry Good */
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px;
+            background: var(--meadow-mauve);
+            color: #fcfaf2;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">🌿 個人檔案</a>
+        <a href="#analysis">🌸 特質分析</a>
+        <a href="#job">🌱 MIS 工作分析</a>
+        <a href="#vision">☀️ 自傳計畫</a>
+    </nav>
+
+    <section id="home">
+        <div class="container profile-flex">
+            <div style="flex: 1;">
+                <h1 class="name-title">宋媫</h1>
+                <p style="font-weight: 600; color: var(--meadow-mauve);">靜宜大學 資訊管理學系 二年級</p>
+                <p>學號：411312676 | 信箱：s1131267@o365st.pu.edu.tw</p>
+                
+                <h3 style="color: var(--soldier-green); margin-top: 30px;">🌿 學習領導歷程</h3>
+                <div class="timeline-item">
+                    <strong>大學：</strong> 現任資管系系學會會長
+                </div>
+                <div class="timeline-item">
+                    <strong>高中：</strong> 擔任自治幹部副大隊長、聖誕節表演活動籌辦總召
+                </div>
+                <div class="timeline-item">
+                    <strong>國中：</strong> 擔任過副班長、風紀等班級幹部
+                </div>
+
+                <div class="info-box">
+                    <strong>興趣：</strong> 繪畫、排球、設計、旅遊<br>
+                    <strong>特別技能：</strong> 吹長笛
+                </div>
+            </div>
+            <img src="c:\Users\user\Downloads\IMG_4636.jpeg" alt="宋媫個人照" class="profile-img">
+        </div>
+    </section>
+
+    <section id="analysis">
+        <div class="container profile-flex">
+            <img src="c:\Users\user\Pictures\holland.png" alt="何倫碼" style="max-width: 400px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+            <div style="flex: 1;">
+                <h2>🌸我的何倫碼：A-藝術型 x I-研究型</h2>
+                <p>根據測驗結果，我展現出藝術型與研究型的特質組合。我熱愛透過各種創作表達感受，對事物充滿好奇心與想像力，同時也喜歡觀察並追根究底。</p>
+                <p>這份「追求系統效率與組織秩序平衡」的專業態度，正是我在資管領域發展的核心動力。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="job">
+        <div class="container">
+            <center><h2>🌱 MIS 工作分析</h2></center>
+            <div class="grid">
+                <div class="card">
+                    <h3 style="color:var(--meadow-mauve)">專案管理師助理</h3>
+                    <p><strong>核心職責：</strong> 擅長透過 IT 手段簡化流程，優化組織效率。</p>
+                    <p><strong>工具：</strong> JIRA、Power BI、MS Project</p>
+                    <p><strong>技能：</strong> 專案規劃、風險管理</p>
+                </div>
+                <div class="card">
+                    <h3 style="color:var(--usu-koubai)">數據應用分析師</h3>
+                    <p><strong>核心職責：</strong> 撰寫高效原始碼，優化數據存取效能並確保資料安全性。</p>
+                    <p><strong>工具：</strong> Tableau、ETL、SQL</p>
+                    <p><strong>技能：</strong> 機器學習、資料工程</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vision">
+        <div class="container">
+            <h2>☀️ 未來展望與充實計畫</h2>
+            <p>作為靜宜資管系學會會長，我致力於整合數位轉型與流程優化，例如評估雲端服務導入或推動 RPA 自動化。</p>
+            
+            <div class="grid">
+                <div class="card" style="border-top: 5px solid var(--meadow-mauve);">
+                    <h4>現階段精進</h4>
+                    <p>持續提升 Kotlin、Python (Flask) 與 SQL 的開發能力，並熟練 Vercel 部署流程。</p>
+                </div>
+                <div class="card" style="border-top: 5px solid var(--usu-koubai);">
+                    <h4>未來充實計畫</h4>
+                    <p>爭取企業實習，將學習歷程轉化為解決實務經管問題的能力。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>🌿 2026 宋媫 | 綻放中的資管學習者 🌸</p>
+    </footer>
+
+</body>
+</html>
